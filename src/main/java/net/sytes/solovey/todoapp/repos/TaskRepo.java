@@ -12,4 +12,6 @@ import java.util.List;
 public interface TaskRepo extends JpaRepository<Task, Integer> {
 	@Query("from Task t where concat(t.name, ' ', t.details) like concat('%', :search, '%') ")
 	List<Task> searchTasks(@Param("search") String searchString);
+
+	List<Task> findAll();
 }
