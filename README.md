@@ -14,7 +14,7 @@ For more information visit [vaadin official site](https://vaadin.com)
 ### How to run
 1. Start MySQL server (see information [above](#running-requirements))
 1. Build project using Maven with `mvn clean package -Pproduction`
-1. Place `todo-app-0.0.2-SNAPSHOT.jar` and `application.properties` in the same directory.
+1. Place `todo-app-0.0.2-SNAPSHOT.jar` from `target` folder and `application.properties` in the same directory.
 1. cd to this directory and run builded package with `java -jar todo-app-0.0.2-SNAPSHOT.jar`
 
 *Already you may use any IDE like Intellij IDEA or Eclipse to run this application.*
